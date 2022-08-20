@@ -43,4 +43,4 @@ export async function getStaticProps() {
   };
 }
 
-https://nextjs.org/learn/basics/dynamic-routes/page-path-external-data
+// https://nextjs.org/learn/basics/dynamic-routes/page-path-external-data
