@@ -10,7 +10,7 @@ export default function Home({allPostsData} ) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hi I'm Tony, I'm a software engineer at Global Kinetic, this is my next js project]</p>
+        <p>Hi I'm Tony, I'm a software engineer at Global Kinetic, this is my next js project</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
@@ -42,5 +42,3 @@ export async function getStaticProps() {
     },
   };
 }
-
-// https://nextjs.org/learn/basics/dynamic-routes/page-path-external-data
