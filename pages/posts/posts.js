@@ -44,15 +44,22 @@ export async function getSortedPostsData() {
   })
 }
 
-export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory)
-  return fileNames.map(fileName => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
-    }
-  })
+export async function getAllPostIds() {
+  // Instead of the file system,
+  // fetch post data from an external API endpoint
+  const res = await fetch('..');
+  const posts = await res.json();
+  return posts.map((post) => {
+    return [
+      {
+        params: {
+          // Statically Generates /posts/a/b/c
+          id: ['a', 'b', 'c'],
+        },
+      },
+      //...
+    ];
+  });
 }
 
 export function getPostData(id) {
