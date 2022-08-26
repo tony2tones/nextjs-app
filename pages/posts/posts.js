@@ -22,7 +22,7 @@ export async function getSortedPostsData() {
     const matterResult = matter(fileContents)
 
     // Use remark to convert markdown into HTML string
-    const processedContent = await remark()
+    const processedContent = remark()
       .use(html)
       .process(matterResult.content);
     const contentHtml = processedContent.toString();
