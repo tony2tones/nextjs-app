@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
               width={250}
               alt={name}
             />
-            <h2 className={utilStyles.heading2Xl}>Felt cute might delete later.</h2>
+            <p>Felt cute might delete later.</p>
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
